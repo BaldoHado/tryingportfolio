@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 15px;
+    height: 80vh;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    height: 100%;
+    background-image: linear-gradient(rgba(134, 230, 230, 0.438), rgba(78, 58, 168, 0.658)), url(gaalxy.jpg);
+
+}
+
+.heading-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    letter-spacing: 8px;
+    text-shadow: white 1px 1px;
+ }
+
+ .heading-box {
+    animation: comeDown 5s;
+    /* backface-visibility: hidden; */
+ }
+
+ @keyframes comeDown {
+     0% {
+         transform: translateX(-200px);
+         transform: translateY(0);
+     }
+     80% {
+         transform: translateX(30px);
+         transform: translateY(0);
+     }
+     100% {
+         transform: translate(0);
+     }
+ }
